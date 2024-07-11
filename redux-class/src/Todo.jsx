@@ -1,8 +1,10 @@
 function Todo(){
-    return(
+    return (
         <>
-        <h2>Todos..</h2></>
+        <h2>Todos</h2>
+        </>
     );
+
 }
 
 export default Todo;
