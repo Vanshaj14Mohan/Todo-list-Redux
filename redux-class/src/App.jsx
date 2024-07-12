@@ -2,13 +2,13 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
-// import Todo from "./src/Todo.jsx";
+import Todo from "./Todo.jsx";
 
 function App() {
 
   return (
     <>
-    {/* <Todo/> */}
+    <Todo/>
     </>
   )
 }
