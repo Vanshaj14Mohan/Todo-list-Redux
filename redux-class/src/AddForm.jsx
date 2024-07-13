@@ -1,12 +1,17 @@
 import { useState } from "react";
+import {useDispatch} from "react-redux"
+import todo from 
+
+
 function AddForm (){
     const [task, setTask] = useState("");
+    const dispatch = useDispatch();
 
     const submitHandler = (evt) =>{
         evt.preventDefault();
         console.log(task);
     };
-    
+
     return(
         <>
         <form onSubmit={submitHandler}>
