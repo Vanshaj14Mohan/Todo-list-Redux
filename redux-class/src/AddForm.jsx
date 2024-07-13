@@ -1,7 +1,6 @@
 import { useState } from "react";
-import {useDispatch} from "react-redux"
-import todo from 
-
+import { useDispatch } from "react-redux"
+import {addTodo} from "./features/todo/todoSlice";
 
 function AddForm (){
     const [task, setTask] = useState("");
@@ -10,6 +9,7 @@ function AddForm (){
     const submitHandler = (evt) =>{
         evt.preventDefault();
         console.log(task);
+        dispatch(addTodo(task));
     };
 
     return(
