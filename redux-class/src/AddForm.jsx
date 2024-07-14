@@ -10,6 +10,7 @@ function AddForm (){
         evt.preventDefault();
         console.log(task);
         dispatch(addTodo(task));
+        setTask("");
     };
 
     return(
